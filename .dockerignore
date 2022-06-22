@@ -1,0 +1,6 @@
+.git
+.gitignore
+LICENSE
+app/node_modules
+app/npm-debug.log
+app/.exclude

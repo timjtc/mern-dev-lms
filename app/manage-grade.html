@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="assets/vendors/bootstrap-custom/bootstrap.css">
+    <!-- iconly -->
+    <link rel="stylesheet" href="assets/vendors/iconly/bold.css">
+    <!-- perfect-scrollbar -->
+    <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    <!-- bootstrap-icons -->
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- Style -->
+    <link rel="stylesheet" href="assets/css/app.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+
+    <title>MERN LMS Test Project - Manage Students</title>
+</head>
+
+<body>
+    <div id="app">
+        <div id="main" class="layout-horizontal">
+            <header class="mb-5">
+
+                <nav class="main-navbar">
+                    <div class="container">
+                        <!-- <a class="navbar-brand" href="index.html"><img src="assets/images/logo/logo.png" alt="Logo" srcset=""></a> -->
+                        <ul>
+                            <li class="menu-item">
+                                <a href="dashboard.html" class="menu-link">
+                                    <i class="bi bi-grid-fill"></i>
+                                    <span>Dashboard</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="manage-grades.html" class="menu-link">
+                                    <i class="bi bi-table"></i>
+                                    <span>Manage</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="index.html" class="menu-link">
+                                    <i class="bi bi-box-arrow-right"></i>
+                                    <span>Logout</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </header>
+
+            <div class="container">
+                <div class="page-heading">
+                    <div class="page-title">
+                        <div class="row">
+                            <div class="col-12 col-md-6 order-md-1 order-last">
+                                <h3>Student Management</h3>
+                                <p class="text-subtitle text-muted">Sample DataTable of students</p>
+                            </div>
+                            <div class="col-12 col-md-6 order-md-2 order-first">
+                                <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="dashboard.html">Dashboard</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Manage</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="section">
+                        <div class="card">
+                            <div class="card-header">
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-striped" id="table1">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                            <th>Phone</th>
+                                            <th>Class</th>
+                                            <th>Grade</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Graiden</td>
+                                            <td>vehicula.aliquet@semconsequat.co.uk</td>
+                                            <td>076 4820 8838</td>
+                                            <td>CLS 1</td>
+                                            <td>
+                                                <input class="col-4" type="number" placeholder="0.00">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Dale</td>
+                                            <td>fringilla.euismod.enim@quam.ca</td>
+                                            <td>0500 527693</td>
+                                            <td>CLS 1</td>
+                                            <td>
+                                                <input class="col-4" type="number" placeholder="0.00">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nathaniel</td>
+                                            <td>mi.Duis@diam.edu</td>
+                                            <td>(012165) 76278</td>
+                                            <td>CLS 1</td>
+                                            <td>
+                                                <input class="col-4" type="number" placeholder="0.00">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Darius</td>
+                                            <td>velit@nec.com</td>
+                                            <td>0309 690 7871</td>
+                                            <td>CLS 1</td>
+                                            <td>
+                                                <input class="col-4" type="number" placeholder="0.00">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Oleg</td>
+                                            <td>rhoncus.id@Aliquamauctorvelit.net</td>
+                                            <td>0500 441046</td>
+                                            <td>CLS 1</td>
+                                            <td>
+                                                <input class="col-4" type="number" placeholder="0.00">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Kermit</td>
+                                            <td>diam.Sed.diam@anteVivamusnon.org</td>
+                                            <td>(01653) 27844</td>
+                                            <td>CLS 1</td>
+                                            <td>
+                                                <input class="col-4" type="number" placeholder="0.00">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jermaine</td>
+                                            <td>sodales@nuncsit.org</td>
+                                            <td>0800 528324</td>
+                                            <td>CLS 12</td>
+                                            <td>
+                                                <input class="col-4" type="number" placeholder="0.00">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ferdinand</td>
+                                            <td>gravida.molestie@tinciduntadipiscing.org</td>
+                                            <td>(016977) 4107</td>
+                                            <td>CLS 12</td>
+                                            <td>
+                                                <input class="col-4" type="number" placeholder="0.00">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Kuame</td>
+                                            <td>Quisque.purus@mauris.org</td>
+                                            <td>(0151) 561 8896</td>
+                                            <td>CLS 12</td>
+                                            <td>
+                                                <input class="col-4" type="number" placeholder="0.00">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Deacon</td>
+                                            <td>Duis.a.mi@sociisnatoquepenatibus.com</td>
+                                            <td>07740 599321</td>
+                                            <td>CLS 121</td>
+                                            <td>
+                                                <input class="col-4" type="number" placeholder="0.00">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Channing</td>
+                                            <td>tempor.bibendum.Donec@ornarelectusante.ca</td>
+                                            <td>0845 46 49</td>
+                                            <td>CLS 121</td>
+                                            <td>
+                                                <input class="col-4" type="number" placeholder="0.00">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Aladdin</td>
+                                            <td>sem.ut@pellentesqueafacilisis.ca</td>
+                                            <td>0800 1111</td>
+                                            <td>CLS 12</td>
+                                            <td>
+                                                <input class="col-4" type="number" placeholder="0.00">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cruz</td>
+                                            <td>non@quisturpisvitae.ca</td>
+                                            <td>07624 944915</td>
+                                            <td>CLS 1</td>
+                                            <td>
+                                                <input class="col-4" type="number" placeholder="0.00">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Keegan</td>
+                                            <td>molestie.dapibus@condimentumDonecat.edu</td>
+                                            <td>0800 200103</td>
+                                            <td>CLS 1</td>
+                                            <td>
+                                                <input class="col-4" type="number" placeholder="0.00">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ray</td>
+                                            <td>placerat.eget@sagittislobortis.edu</td>
+                                            <td>(0112) 896 6829</td>
+                                            <td>CLS 1</td>
+                                            <td>
+                                                <input class="col-4" type="number" placeholder="0.00">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Maxwell</td>
+                                            <td>diam@dapibus.org</td>
+                                            <td>0334 836 4028</td>
+                                            <td>CLS 122</td>
+                                            <td>
+                                                <input class="col-4" type="number" placeholder="0.00">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Carter</td>
+                                            <td>urna.justo.faucibus@orci.com</td>
+                                            <td>07079 826350</td>
+                                            <td>CLS 122</td>
+                                            <td>
+                                                <input class="col-4" type="number" placeholder="0.00">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Stone</td>
+                                            <td>velit.Aliquam.nisl@sitametrisus.com</td>
+                                            <td>0800 1111</td>
+                                            <td>CLS 12</td>
+                                            <td>
+                                                <input class="col-4" type="number" placeholder="0.00">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Berk</td>
+                                            <td>fringilla.porttitor.vulputate@taciti.edu</td>
+                                            <td>(0101) 043 2822</td>
+                                            <td>CLS 11</td>
+                                            <td>
+                                                <input class="col-4" type="number" placeholder="0.00">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Philip</td>
+                                            <td>turpis@euenimEtiam.org</td>
+                                            <td>0500 571108</td>
+                                            <td>CLS 1</td>
+                                            <td>
+                                                <input class="col-4" type="number" placeholder="0.00">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Kibo</td>
+                                            <td>feugiat@urnajustofaucibus.co.uk</td>
+                                            <td>07624 682306</td>
+                                            <td>CLS 1</td>
+                                            <td>
+                                                <input class="col-4" type="number" placeholder="0.00">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bruno</td>
+                                            <td>elit.Etiam.laoreet@luctuslobortisClass.edu</td>
+                                            <td>07624 869434</td>
+                                            <td>CLS 1</td>
+                                            <td>
+                                                <input class="col-4" type="number" placeholder="0.00">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Leonard</td>
+                                            <td>blandit.enim.consequat@mollislectuspede.net</td>
+                                            <td>0800 1111</td>
+                                            <td>CLS 1</td>
+                                            <td>
+                                                <input class="col-4" type="number" placeholder="0.00">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Hamilton</td>
+                                            <td>mauris@diam.org</td>
+                                            <td>0800 256 8788</td>
+                                            <td>CLS 1</td>
+                                            <td>
+                                                <input class="col-4" type="number" placeholder="0.00">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Harding</td>
+                                            <td>Lorem.ipsum.dolor@etnetuset.com</td>
+                                            <td>0800 1111</td>
+                                            <td>CLS 12</td>
+                                            <td>
+                                                <input class="col-4" type="number" placeholder="0.00">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Emmanuel</td>
+                                            <td>eget.lacus.Mauris@feugiatSednec.org</td>
+                                            <td>(016977) 8208</td>
+                                            <td>CLS 122</td>
+                                            <td>
+                                                <input class="col-4" type="number" placeholder="0.00">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </section>
+                </div>
+            </div>
+
+            <footer>
+                <div class="container">
+                    <div class="footer clearfix mb-0 text-muted">
+                        <div class="float-start">
+                            <p>2021 &copy; Mazer Template</p>
+                        </div>
+                        <!-- <div class="float-end">
+                            <p>Crafted with <span class="text-danger"><i class="bi bi-heart"></i></span> by <a
+                                    href="http://ahmadsaugi.com">A. Saugi</a></p>
+                        </div> -->
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+
+    <!-- <script src="node_modules/jquery/dist/jquery.slim.min.js"></script> -->
+    <!-- <script src="node_modules/popper.js/dist/umd/popper.min.js"></script> -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/vendors/apexcharts/apexcharts.js"></script>
+    <script src="assets/js/pages/dashboard.js"></script>
+
+    <script src="assets/js/pages/horizontal-layout.js"></script>
+</body>
+
+</html>
